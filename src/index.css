@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Climate Crisis', cursive;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Golos Text', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sofia Sans', sans-serif;
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+font-family: 'Tangerine', cursive; */
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    transition: all 10ms ease-in-out  ;
+}
+section{
+  scroll-snap-align: start;
+}
+.entries{
+  opacity: 0;
+  transition: all 2s linear;
+ }
+.show{
+  opacity: 1;
+}
+
+.logo{
+    font-family: 'Tangerine', cursive; 
+}
+.floo{
+    background-color: red;
+    background: transparent;
+    /* width: 20px; */
+
+
+}
+.left{
+    z-index: 100;
+   /* background-image: url(../assets/grenish-birkenstock.jpeg); */
+   /* position: absolute;
+   right: 0;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain; */
+
+}
+.choosing{
+    transform: translateX(-200px)
+    transi
+}
+.choosing:hover{
+    /* background: rgb(32,31,31);
+    background: linear-gradient(90deg, rgba(32,31,31,0.3) 0%, rgba(50,47,47,0.3) 100%); 
+    transform: translateX(0) */
+}
+.newarrivals{
+    
+        /* Telling our absolute positioned video to 
+        be relative to this element */
+        position: relative;
+      
+        width: 200vh;
+        height: 300px;
+      
+        /* Will not allow the video to overflow the 
+        container */
+        overflow: hidden;
+      
+        /* Centering the container's content vertically 
+        and horizontally */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+}
+video {
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .textn{
+    background: rgb(32,31,31);
+    background: linear-gradient(90deg, rgba(32,31,31,0.5) 100%, rgba(50,47,47,0.6) 100%); 
+    transform: translateX(0);
+    width: 100%;
+    font-weight: 200;
+    height: 100%;
+    
+
+
+  }
+  .textn h3{
+    /* font-family: 'Climate Crisis', cursive; */
+    font-size: 5rem;
+    font-weight: bold;
+
+    padding-bottom:-2rem ;
+    
+    font-family: 'Tangerine', cursive;
+    
+  }
+.text-textn{
+    
+}
+
+/* the slider */
+.image{
+ display: block;
+}
+.disappear{
+    display: none;
+}
+.appear{
+  display:block ;
+}
